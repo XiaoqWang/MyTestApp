@@ -20,6 +20,12 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 100, 100, 100)];
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
+    
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    for (NSInteger idx = 0; idx < 10; idx++) {
+        [tmpArray addObject:[NSString stringWithFormat:@"%d",idx]];
+    }
+    
 }
 
 
